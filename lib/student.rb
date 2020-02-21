@@ -22,6 +22,8 @@ class Student
   
   def self.drop_table
     sql = DROP DATABASE students;
+    
+    DB[:conn].execute(sql)
   end 
   
 end
